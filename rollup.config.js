@@ -47,9 +47,6 @@ const plugins = [
 	}),
 	commonjs(),
 	filesize(),
-	string({
-		include: "modern-normalize"
-	}),
 	visualizer()
 ];
 

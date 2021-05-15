@@ -14,11 +14,6 @@ module.exports = {
 					exclude: /node_modules/,
 					loader: "babel-loader"
 				},
-				{
-					test: /\.css?$/,
-					include: /modern-normalize/,
-					loader: ["to-string-loader", "css-loader"]
-				}
 			]
 		}
 	},

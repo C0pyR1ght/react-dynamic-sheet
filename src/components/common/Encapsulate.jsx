@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import root from "react-shadow/emotion";
-import { Global, css } from "@emotion/core";
-import modernNormalize from "modern-normalize"; // Imports as string as per rollup config
+import { Global, css } from "@emotion/react";
 
 const Encapsulate = ({ style, children, ...rest }) => {
 	return (
@@ -18,7 +17,6 @@ const Encapsulate = ({ style, children, ...rest }) => {
 		>
 			<Global
 				styles={css`
-					${modernNormalize}
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
 				`}
